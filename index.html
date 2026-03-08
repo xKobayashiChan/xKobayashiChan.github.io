@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="こばやしの自己紹介ページ。ゲーム・日常・開発のことを発信しています。">
-  <title>自己紹介サイト</title>
-  <link rel="stylesheet" href="style.css">
+  <title>こばやし | Personal Site</title>
+  <link rel="icon" href="./images/animepfp.jpg" type="image/jpeg">
+  <link rel="shortcut icon" href="./images/animepfp.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="style.css?v=20260308-2">
 </head>
 <body>
   <main class="page">
@@ -28,7 +30,21 @@
           <li><a href="https://github.com/xKobayashiChan" target="_blank" rel="noopener noreferrer">GitHub</a></li>
         </ul>
       </nav>
+
+      <section class="playground" aria-labelledby="js-title">
+        <h2 id="js-title">JavaScript Test</h2>
+        <p id="greetingText" class="greeting" aria-live="polite">読み込み中...</p>
+        <p id="fortuneText" class="fortune">ボタンを押して、今日のひとことを表示。</p>
+
+        <div class="actions">
+          <button type="button" id="messageBtn">ひとことを引く</button>
+          <button type="button" id="themeBtn">テーマ切替</button>
+        </div>
+
+        <p class="visit-count">訪問回数: <span id="visitCount">0</span></p>
+      </section>
     </section>
   </main>
+  <script src="script.js?v=20260308-2" defer></script>
 </body>
 </html>
