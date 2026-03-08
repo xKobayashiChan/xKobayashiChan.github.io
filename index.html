@@ -3,18 +3,32 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="こばやしの自己紹介ページ。ゲーム・日常・開発のことを発信しています。">
   <title>自己紹介サイト</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <img src="./images/animepfp.jpg" alt="プロフィール写真" class="profile-img">
-    <h1>こばやし</h1>
-    <p>ゲーム好きだけどゲームが下手な人。</p>
-    <ul class="sns-links">
-      <li><a href="https://x.com/kobayu_mai" target="_blank">Twitter</a></li>
-      <li><a href="https://github.com/xKobayashiChan" target="_blank">GitHub</a></li>
-    </ul>
-  </div>
+  <main class="page">
+    <section class="container" aria-labelledby="profile-title">
+      <img src="./images/animepfp.jpg" alt="こばやしのプロフィール写真" class="profile-img" width="120" height="120" decoding="async">
+      <p class="eyebrow">GAME / LIFE / DEV</p>
+      <h1 id="profile-title">こばやし</h1>
+      <p class="intro">ゲーム好きだけどゲームが下手な人。ゆるく楽しく、日常と開発のことを発信しています。</p>
+
+      <ul class="tags" aria-label="好きなこと">
+        <li>ゲーム</li>
+        <li>アニメ</li>
+        <li>個人開発</li>
+      </ul>
+
+      <nav aria-label="SNSリンク">
+        <ul class="sns-links">
+          <li><a href="https://x.com/kobayu_mai" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+          <li><a href="https://github.com/xKobayashiChan" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
 </body>
 </html>
