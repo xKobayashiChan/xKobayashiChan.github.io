@@ -8,7 +8,7 @@
   <title>こばやし | Personal Site</title>
   <link rel="icon" href="./images/animepfp.jpg" type="image/jpeg">
   <link rel="shortcut icon" href="./images/animepfp.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="style.css?v=20260308-2">
+  <link rel="stylesheet" href="style.css?v=20260308-6">
 </head>
 <body>
   <main class="page">
@@ -16,7 +16,8 @@
       <img src="./images/animepfp.jpg" alt="こばやしのプロフィール写真" class="profile-img" width="120" height="120" decoding="async">
       <p class="eyebrow">GAME / LIFE / DEV</p>
       <h1 id="profile-title">こばやし</h1>
-      <p class="intro">ゲーム好きだけどゲームが下手な人。ゆるく楽しく、日常と開発のことを発信しています。</p>
+      <p class="intro">ゲーム好きだけどゲームが下手な人。<br>
+        ゆるく楽しく、自分には厳しく、他人には優しく人生を生きます。</p>
 
       <ul class="tags" aria-label="好きなこと">
         <li>ゲーム</li>
@@ -24,20 +25,39 @@
         <li>個人開発</li>
       </ul>
 
+      <section class="hobbies" aria-labelledby="hobby-title">
+        <h2 id="hobby-title">趣味</h2>
+        <ul>
+          <li>maimai</li>
+          <li>休日にアニメを一気見する</li>
+          <li>おもしろそうなことを試す</li>
+        </ul>
+      </section>
+
+      <section class="games" aria-labelledby="games-title">
+        <h2 id="games-title">好きなゲーム</h2>
+        <ul class="game-links">
+          <li><a href="https://akasha.cv/profile/818902675" target="_blank" rel="noopener noreferrer">原神</a></li>
+          <li><a href="https://www.geoguessr.com/user/67e03552f228aa1e02c37849" target="_blank" rel="noopener noreferrer">GeoGuessr</a></li>
+          <li>maimai</li>
+          <li>学マス</li>
+          <li>モンスト</li>
+        </ul>
+      </section>
+
       <nav aria-label="SNSリンク">
         <ul class="sns-links">
           <li><a href="https://x.com/kobayu_mai" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
           <li><a href="https://github.com/xKobayashiChan" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://note.com/irohasu5884" target="_blank" rel="noopener noreferrer">Note</a></li>
         </ul>
       </nav>
 
       <section class="playground" aria-labelledby="js-title">
-        <h2 id="js-title">JavaScript Test</h2>
+        <h2 id="js-title">おあそびゾーン</h2>
         <p id="greetingText" class="greeting" aria-live="polite">読み込み中...</p>
-        <p id="fortuneText" class="fortune">ボタンを押して、今日のひとことを表示。</p>
 
         <div class="actions">
-          <button type="button" id="messageBtn">ひとことを引く</button>
           <button type="button" id="themeBtn">テーマ切替</button>
         </div>
 

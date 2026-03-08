@@ -1,14 +1,4 @@
-const fortuneMessages = [
-  "今日はレアアイテムが落ちる日。",
-  "そのコード、あと3行で神になる。",
-  "負けた試合ほど次に効く。",
-  "休憩5分で集中力が戻る。",
-  "新しいこと1つ試せば勝ち。",
-];
-
-const messageBtn = document.getElementById("messageBtn");
 const themeBtn = document.getElementById("themeBtn");
-const fortuneText = document.getElementById("fortuneText");
 const visitCount = document.getElementById("visitCount");
 const greetingText = document.getElementById("greetingText");
 let typingTimer = null;
@@ -18,15 +8,6 @@ function updateVisitCount() {
   const current = Number(localStorage.getItem(key) || 0) + 1;
   localStorage.setItem(key, String(current));
   visitCount.textContent = String(current);
-}
-
-function drawMessage() {
-  const index = Math.floor(Math.random() * fortuneMessages.length);
-  fortuneText.textContent = fortuneMessages[index];
-  fortuneText.classList.remove("flash");
-  // Force reflow to restart animation each click.
-  void fortuneText.offsetWidth;
-  fortuneText.classList.add("flash");
 }
 
 function getGreetingMessage() {
@@ -111,10 +92,6 @@ setInterval(() => {
   }
   greetingText.textContent = getGreetingMessage();
 }, 60000);
-
-if (messageBtn) {
-  messageBtn.addEventListener("click", drawMessage);
-}
 
 if (themeBtn) {
   themeBtn.addEventListener("click", toggleTheme);
