@@ -1,11 +1,13 @@
 # Kobayashi Personal Homepage
 
-A simple personal homepage built with HTML and CSS.
+A simple personal homepage built with HTML, CSS, and vanilla JavaScript.
 
 ## Overview
 This repository contains a static profile website with:
-- Profile image and introduction
-- Social links (X and GitHub)
+- Profile image, intro, hobbies, and favorite games
+- A "latest posts" list rendered from a small data array in `script.js`
+- Social links (X, GitHub, Note)
+- Light/dark theme that follows the OS/browser preference automatically
 - Responsive card layout for mobile and desktop
 
 ## Project Structure
@@ -13,6 +15,7 @@ This repository contains a static profile website with:
 .
 |- index.html
 |- style.css
+|- script.js
 |- images/
    |- animepfp.jpg
 ```
@@ -24,6 +27,7 @@ Because this is a static website, you can run it quickly by opening `index.html`
 - Edit text/content in `index.html`
 - Edit design/colors/layout in `style.css`
 - Replace the profile image in `images/animepfp.jpg`
+- Update the "now playing" game or the latest posts list by editing the `nowPlaying` / `latestPosts` values at the top of `script.js`
 
 ## Deploy with GitHub Pages
 1. Push this repository to GitHub.

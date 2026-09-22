@@ -8,63 +8,176 @@
   <title>こばやし | Personal Site</title>
   <link rel="icon" href="./images/animepfp.jpg" type="image/jpeg">
   <link rel="shortcut icon" href="./images/animepfp.jpg" type="image/jpeg">
-  <link rel="stylesheet" href="style.css?v=20260308-6">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="こばやし | Personal Site">
+  <meta property="og:title" content="こばやし | Personal Site">
+  <meta property="og:description" content="こばやしの自己紹介ページ。ゲーム・日常・開発のことを発信しています。">
+  <meta property="og:url" content="https://xkobayashichan.github.io/">
+  <meta property="og:image" content="https://xkobayashichan.github.io/images/animepfp.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="こばやし | Personal Site">
+  <meta name="twitter:description" content="こばやしの自己紹介ページ。ゲーム・日常・開発のことを発信しています。">
+  <meta name="twitter:image" content="https://xkobayashichan.github.io/images/animepfp.jpg">
+
+  <link rel="stylesheet" href="style.css?v=20260923-12">
 </head>
 <body>
   <main class="page">
     <section class="container" aria-labelledby="profile-title">
-      <img src="./images/animepfp.jpg" alt="こばやしのプロフィール写真" class="profile-img" width="120" height="120" decoding="async">
-      <p class="eyebrow">GAME / LIFE / DEV</p>
+      <div class="avatar-wrap">
+        <img src="./images/animepfp.jpg" alt="こばやしのプロフィール写真" class="profile-img" width="120" height="120" decoding="async">
+        <span class="status-dot" title="アクティブ" aria-hidden="true"></span>
+      </div>
+      <p class="eyebrow">GAME / DEV</p>
       <h1 id="profile-title">こばやし</h1>
       <p class="intro">ゲーム好きだけどゲームが下手な人。<br>
-        ゆるく楽しく、自分には厳しく、他人には優しく人生を生きます。</p>
+        ゆるく楽しく</p>
 
-      <ul class="tags" aria-label="好きなこと">
-        <li>ゲーム</li>
-        <li>アニメ</li>
-        <li>個人開発</li>
-      </ul>
+      <div class="tabs" role="tablist" aria-label="カテゴリ">
+        <button type="button" class="tab-btn" id="tab-game" role="tab" aria-selected="true" aria-controls="panel-game">🕹️ GAME</button>
+        <button type="button" class="tab-btn" id="tab-dev" role="tab" aria-selected="false" aria-controls="panel-dev">💻 DEV</button>
+      </div>
 
-      <section class="hobbies" aria-labelledby="hobby-title">
-        <h2 id="hobby-title">趣味</h2>
-        <ul>
-          <li>maimai</li>
-          <li>休日にアニメを一気見する</li>
-          <li>おもしろそうなことを試す</li>
-        </ul>
-      </section>
+      <div class="tab-panels">
+        <section class="games" id="panel-game" role="tabpanel" aria-labelledby="tab-game">
+          <div class="game-grid">
+            <article class="game-card">
+              <h3>原神</h3>
+              <ul class="game-stats">
+                <li>冒険ランク: 60</li>
+                <li>世界ランク: 9</li>
+                <li>アチーブメント: 1400↑</li>
+              </ul>
+              <p class="game-achievement"><a href="https://akasha.cv/profile/818902675" target="_blank" rel="noopener noreferrer">Akasha</a></p>
+            </article>
+            <article class="game-card">
+              <h3>GeoGuessr</h3>
+              <ul class="game-stats">
+                <li>soloランク: Master</li>
+                <li>duoランク: Master</li>
+              </ul>
+              <p class="game-achievement"><a href="https://www.geoguessr.com/user/67e03552f228aa1e02c37849" target="_blank" rel="noopener noreferrer">GeoGuessr</a></p>
+            </article>
+            <article class="game-card">
+              <h3>maimai</h3>
+              <ul class="game-stats">
+                <li>開始日: 2018/10/21</li>
+                <li>最高レート: 15460（虹）</li>
+              </ul>
+            </article>
+            <article class="game-card">
+              <h3>学マス</h3>
+              <ul class="game-stats">
+                <li>開始日: 2025/11/22</li>
+                <li>Pランク: 57</li>
+              </ul>
+            </article>
+            <article class="game-card">
+              <h3>モンスト</h3>
+              <ul class="game-stats">
+                <li>開始日: 2017/06/01</li>
+                <li>ランク: 1500↑</li>
+                <li>運極数: 500↑</li>
+                <li>覇者・禁忌・天魔制覇</li>
+              </ul>
+            </article>
+            <article class="game-card">
+              <h3>スプラトゥーン3</h3>
+              <ul class="game-stats">
+                <li>開始日: 2026/05/07</li>
+                <li>最高ウデマエ: S+12</li>
+                <li>最高XP: 1700↑（ヤグラ）</li>
+              </ul>
+            </article>
+            <article class="game-card">
+              <h3>ポケモンユナイト</h3>
+              <ul class="game-stats">
+                <li>最高レート: シーズン3 ソロ1800</li>
+              </ul>
+            </article>
+            <article class="game-card">
+              <h3>ポケポケ</h3>
+              <ul class="game-stats">
+                <li>最高ランク: マスター</li>
+              </ul>
+            </article>
+          </div>
+        </section>
 
-      <section class="games" aria-labelledby="games-title">
-        <h2 id="games-title">好きなゲーム</h2>
-        <ul class="game-links">
-          <li><a href="https://akasha.cv/profile/818902675" target="_blank" rel="noopener noreferrer">原神</a></li>
-          <li><a href="https://www.geoguessr.com/user/67e03552f228aa1e02c37849" target="_blank" rel="noopener noreferrer">GeoGuessr</a></li>
-          <li>maimai</li>
-          <li>学マス</li>
-          <li>モンスト</li>
-        </ul>
-      </section>
-
-      <nav aria-label="SNSリンク">
-        <ul class="sns-links">
-          <li><a href="https://x.com/kobayu_mai" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
-          <li><a href="https://github.com/xKobayashiChan" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://note.com/irohasu5884" target="_blank" rel="noopener noreferrer">Note</a></li>
-        </ul>
-      </nav>
-
-      <section class="playground" aria-labelledby="js-title">
-        <h2 id="js-title">おあそびゾーン</h2>
-        <p id="greetingText" class="greeting" aria-live="polite">読み込み中...</p>
-
-        <div class="actions">
-          <button type="button" id="themeBtn">テーマ切替</button>
-        </div>
-
-        <p class="visit-count">訪問回数: <span id="visitCount">0</span></p>
-      </section>
+        <section class="dev" id="panel-dev" role="tabpanel" aria-labelledby="tab-dev" hidden>
+          <div class="game-grid">
+            <article class="game-card">
+              <h3>こばやし自己紹介サイト</h3>
+              <ul class="game-stats">
+                <li>HTML / CSS / JavaScript</li>
+                <li>GitHub Pagesで公開</li>
+              </ul>
+              <p class="game-achievement"><a href="https://github.com/xKobayashiChan/xKobayashiChan.github.io" target="_blank" rel="noopener noreferrer">リポジトリを見る</a></p>
+            </article>
+            <article class="game-card">
+              <h3>mahiru</h3>
+              <ul class="game-stats">
+                <li>TypeScript</li>
+                <li>スプラトゥーンのスケジュール・マップローテーションを確認できるデスクトップクライアント</li>
+              </ul>
+              <p class="game-achievement"><a href="https://github.com/xKobayashiChan/mahiru" target="_blank" rel="noopener noreferrer">リポジトリを見る</a></p>
+            </article>
+            <article class="game-card">
+              <h3>Kaguya</h3>
+              <ul class="game-stats">
+                <li>Java</li>
+                <li>Minecraft Private Client</li>
+              </ul>
+              <p class="game-achievement"><a href="https://github.com/xKobayashiChan/Kaguya" target="_blank" rel="noopener noreferrer">リポジトリを見る</a></p>
+            </article>
+            <article class="game-card">
+              <h3>kotone</h3>
+              <ul class="game-stats">
+                <li>Python</li>
+                <li>開発中のデスクトップクライアント</li>
+              </ul>
+              <p class="game-achievement"><a href="https://github.com/xKobayashiChan/kotone" target="_blank" rel="noopener noreferrer">リポジトリを見る</a></p>
+            </article>
+            <article class="game-card">
+              <h3>Chiffon</h3>
+              <ul class="game-stats">
+                <li>Python</li>
+                <li>maimaiのdiscordbot</li>
+              </ul>
+              <p class="game-achievement"><a href="https://github.com/xKobayashiChan/Chiffon" target="_blank" rel="noopener noreferrer">リポジトリを見る</a></p>
+            </article>
+          </div>
+        </section>
+      </div>
     </section>
   </main>
-  <script src="script.js?v=20260308-2" defer></script>
+
+  <nav class="sns-fixed" aria-label="SNSリンク">
+    <ul class="sns-links">
+      <li>
+        <a href="https://x.com/kobayu_mai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" title="X (Twitter)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/xKobayashiChan" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.19 1.84 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .3.2.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://note.com/irohasu5884" target="_blank" rel="noopener noreferrer" aria-label="Note" title="Note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1 1 0 0 0 0-1.41l-2.34-2.34a1 1 0 0 0-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/@kobayashi_desuu" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.51 3.5 12 3.5 12 3.5s-7.51 0-9.38.55A3.02 3.02 0 0 0 .5 6.19 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.81 3.02 3.02 0 0 0 2.12 2.14c1.87.55 9.38.55 9.38.55s7.51 0 9.38-.55a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.81zM9.6 15.6V8.4l6.27 3.6z"/></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="script.js?v=20260923-6" defer></script>
 </body>
 </html>
